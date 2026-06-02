@@ -1,0 +1,1 @@
+python3 -m scripts.batch_experiments.run_all_experiments scripts/batch_experiments/config_files data/recorded_runs

@@ -1,0 +1,73 @@
+# ============================================================
+# Radar system configuration (FMCW)
+# ============================================================
+radar_config:
+  n_rx: 1                     # Number of receive antennas
+  fb: 60e9  # Radar carrier frequency (Hz)
+  B: 2.0e9         # Chirp bandwidth (Hz)
+
+  n_chirps: 64        # Number of chirps per frame
+  n_samples: 128      # ADC samples per chirp
+  t_chirp: 6.4e-5     # Chirp duration (seconds)
+
+  IQ: true               # Use complex IQ data
+  noise_std: 0.0001          # Base noise standard deviation
+  hann_window: true
+
+# ============================================================
+# Experiment setup
+# ============================================================
+experiment:
+  number_of_trials: 50000      # Independent Monte-Carlo runs
+  frames_per_trial: 5         # Radar frames processed per run
+  output_file: single_target_noise_test_no_norm.npy
+  save_file: true
+  show_plot: false
+
+
+# ============================================================
+# Target generation
+# ============================================================
+targets:
+  max_number: 1               # Maximum simultaneous targets
+
+  range_m:
+    min: 0.1                  # Minimum target range (meters)
+    max: null                  # Maximum target range (meters)
+
+
+# ============================================================
+# Beamforming
+# ============================================================
+beamforming:
+  enabled: false              # Enable virtual beamforming
+
+
+# ============================================================
+# Noise randomization
+# ============================================================
+noise:
+  randomize: true            # Randomize noise per trial
+  std_range:
+    min: 0.1
+    max: 0.7
+
+
+# ============================================================
+# Adaptive Resonance Network
+# ============================================================
+network:
+  random_start_frequency: true
+  max_start_frequency: 6.0e5   # Upper bound for random init (Hz)
+                                  # TODO: derive from radar parameters
+
+  random_w_scale: false            # Inverse learning rate (λ⁻¹)
+  w_scale: 3
+                                  # w_scale is multiplied by chirp duration
+  w_scale_range:
+    min: 1.0e-4
+    max: 15.0
+
+  random_input_normalization: false
+  input_normalization: false
+  amplitude_normalization: False # normalization of the neurons mag. 

@@ -1,0 +1,17 @@
+numpy
+matplotlib
+tqdm
+scipy
+ipywidgets
+PyQt5
+pyqtgraph
+spidev
+cython
+cythonbuilder
+numba
+pyfftw
+pyyaml
+setuptools
+pybind11
+mat73
+ruamel.yaml
