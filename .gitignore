@@ -1,3 +1,5 @@
 data/recorded_runs/*
 data/delft_moving_targets
 data/delft_static_target
+*.so
+venv/
