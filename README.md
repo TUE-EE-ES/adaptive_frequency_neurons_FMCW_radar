@@ -1,4 +1,4 @@
-# Adaptive Frequency Neurons
+# Adaptive-Frequency Resonate-and-Fire Neurons for Spectral Estimation of Streaming Radar Signals
 
 This repository contains the official implementation to reproduce the results presented in the paper: **"Adaptive-Frequency Resonate-and-Fire Neurons for Spectral Estimation of Streaming Radar Signals"**.
 
