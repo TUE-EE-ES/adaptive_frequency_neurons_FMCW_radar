@@ -1,6 +1,6 @@
 # Adaptive Frequency Neurons
 
-This repository contains the official implementation to reproduce the results presented in the paper: **"TODO: Insert Paper Title Here"**.
+This repository contains the official implementation to reproduce the results presented in the paper: **"Adaptive-Frequency Resonate-and-Fire Neurons for Spectral Estimation of Streaming Radar Signals"**.
 
 Our work introduces a dynamical system of adaptive-frequency neurons—specifically utilizing Adaptive Resonate-and-Fire (ARF) mechanics—designed for efficient, streaming FMCW radar signal estimation.
 
@@ -49,6 +49,12 @@ Note: The script processes every configuration file found in scripts/batch_exper
 ### 4. Visualize Results
 
 Once the simulations are complete, you can analyze and visualize the performance metrics using the provided Jupyter notebook: `notebooks/performance_measurements.ipynb`.
+
+### 5. Download recordings
+
+Download the data from the followinf [link](https://doi.org/10.5281/zenodo.20491183) and uncompress it in the `data` folder.
+
+Run the notebook in `notebook/recorded_data` to visualize the results.
 
 <!-- ## Citation
 
