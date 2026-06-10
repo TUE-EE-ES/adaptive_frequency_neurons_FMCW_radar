@@ -52,7 +52,7 @@ Once the simulations are complete, you can analyze and visualize the performance
 
 ### 5. Download recordings
 
-Download the data from the followinf [link](https://doi.org/10.5281/zenodo.20491183) and uncompress it in the `data` folder.
+Download the data from the following [link](https://doi.org/10.5281/zenodo.20491183) and uncompress it in the `data` folder.
 
 Run the notebook in `notebook/recorded_data` to visualize the results.
 
