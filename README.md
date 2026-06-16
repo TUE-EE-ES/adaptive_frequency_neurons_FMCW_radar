@@ -56,15 +56,6 @@ Download the data from the following [link](https://doi.org/10.5281/zenodo.20491
 
 Run the notebook in `notebook/recorded_data` to visualize the results.
 
-<!-- ## Citation
+### 6. Interactive Demo
 
-If you use this code or find our research helpful in your work, please cite our paper:
-
-```
-@article{todo2026adaptive,
-  title={TODO: Insert Paper Title},
-  author={Chiavazza, Stefano and Yuan, Sen ... [Expand fully as needed]},
-  journal={TODO: Insert Journal/Conference},
-  year={2026}
-}
-``` -->
+You can experiment with a simulation of this method [here](https://stefanochi.github.io/adaptive_frequency_neurons/). Please note that this interactive presentation has not been fully verified to match the C++ implementation exactly.
